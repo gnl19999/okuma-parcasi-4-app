@@ -116,7 +116,7 @@
     <div class="nav-hint">İpucu: Yön tuşlarını kullanabilirsiniz (← / →)</div>
 
     <script>
-        // Görsel linkleri içeren GÜNCELLENMİŞ veritabanı
+        // Görsel linkleri kullanıcı isteğine göre güncellenmiş veritabanı
         const wordList = [
             { 
                 word: "be", 
@@ -134,13 +134,14 @@
                 synonyms: "shore, coast",
                 image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" // Plaj
             },
-            { // 3. Kelime (Index 2) - beautiful
+            { 
                 word: "beautiful", 
                 meaning: "güzel", 
                 example_en: "She has a [beautiful] smile.", 
                 example_tr: "Onun güzel bir gülümsemesi var.", 
                 synonyms: "lovely, pretty",
-                image: "https://media.istockphoto.com/id/1035964468/tr/foto%C4%9Fraf/k%C4%B1z-papatya-%C3%A7i%C3%A7e%C4%9Fi-elinde-tutuyor-se%C3%A7ici-odak.jpg?s=612x612&w=0&k=20&c=ZUlmWp8aYPXPJx9XfpjzlAb5vqRzjdnaSMwisbVQSMY=" // GÜNCELLENDİ: Kız papatya tutuyor
+                // GÖRSEL SİLİNDİ (Kart No: 3)
+                image: "" 
             },
             { 
                 word: "because", 
@@ -158,13 +159,14 @@
                 synonyms: "turn into, grow",
                 image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=600&q=80" // Zirveye tırmanış
             },
-            { // 6. Kelime (Index 5) - bed
+            { 
                 word: "bed", 
                 meaning: "yatak", 
                 example_en: "I need to make my [bed].", 
                 example_tr: "Yatağımı toplamam gerekiyor.", 
                 synonyms: "cot, sleeper",
-                image: "https://images.pexels.com/photos/5895030/pexels-photo-5895030.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" // GÜNCELLENDİ: Yatak
+                // GÖRSEL SİLİNDİ (Kart No: 6)
+                image: "" 
             },
             { 
                 word: "bedroom", 
@@ -206,29 +208,32 @@
                 synonyms: "start, outset",
                 image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=600&q=80" // Koşu başlangıç çizgisi
             },
-            { // 12. Kelime (Index 11) - behind
+            { 
                 word: "behind", 
                 meaning: "arkasında", 
                 example_en: "The car is parked [behind] the house.", 
                 example_tr: "Araba evin arkasına park edilmiş.", 
                 synonyms: "at the rear of, after",
-                image: "https://images.pexels.com/photos/11270610/pexels-photo-11270610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" // GÜNCELLENDİ: Araba ve ev
+                // GÖRSEL SİLİNDİ (Kart No: 12)
+                image: ""
             },
-            { // 13. Kelime (Index 12) - believe
+            { 
                 word: "believe", 
                 meaning: "inanmak", 
                 example_en: "Do you [believe] in magic?", 
                 example_tr: "Sihire inanır mısın?", 
                 synonyms: "trust, accept",
-                image: "https://media.istockphoto.com/id/953432540/tr/foto%C4%9Fraf/sihirbaz-veya-illusionist-b%C3%BCy%C3%BC-h%C3%BCner-g%C3%B6steriyor-mavi-sahne-arka-planda-hafif.jpg?s=612x612&w=0&k=20&c=DXIjY6TpOF8GUobXEEPlItOLFAqnJdlZ3wwfzOm5O5Y=" // GÜNCELLENDİ: Sihirbaz
+                // GÖRSEL SİLİNDİ (Kart No: 13)
+                image: ""
             },
-            { // 14. Kelime (Index 13) - below
+            { 
                 word: "below", 
                 meaning: "altında", 
                 example_en: "The temperature is [below] zero.", 
                 example_tr: "Sıcaklık sıfırın altında.", 
                 synonyms: "under, beneath",
-                image: "https://media.istockphoto.com/id/1067764520/tr/foto%C4%9Fraf/termometre-karda.jpg?s=612x612&w=0&k=20&c=GHgXSeI9kPiVs6PHWUtX5aohq1vVzA7hRMyCBI7GZSg=" // GÜNCELLENDİ: Termometre karda
+                // GÖRSEL SİLİNDİ (Kart No: 14)
+                image: ""
             },
             { 
                 word: "best", 
@@ -262,13 +267,14 @@
                 synonyms: "bike, cycle",
                 image: "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=600&q=80" // Şehir bisikleti
             },
-            { // 19. Kelime (Index 18) - big
+            { 
                 word: "big", 
                 meaning: "büyük", 
                 example_en: "They live in a [big] house.", 
                 example_tr: "Onlar büyük bir evde yaşıyor.", 
                 synonyms: "large, huge",
-                image: "https://media.istockphoto.com/id/145054512/tr/foto%C4%9Fraf/front-stone-faced-single-family-house-home-suburban-maryland.jpg?b=1&s=612x612&w=0&k=20&c=2jACXLjRGHGr_MfUvSOHl_wFe_0dvu0ibBrZo4JMn6Q=" // GÜNCELLENDİ: Taş cepheli büyük ev
+                // GÖRSEL SİLİNDİ (Kart No: 19)
+                image: ""
             },
             { 
                 word: "bike", 
